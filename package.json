@@ -1,0 +1,29 @@
+{
+  "name": "snowpack-react-boilerplate",
+  "version": "0.0.1",
+  "description": "A simple and easy boilerplate for react developer, based on snowpack.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weiyuxuan/snowpack-react-boilerplate.git"
+  },
+  "author": "weiyuxuan",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "bugs": {
+    "url": "https://github.com/weiyuxuan/snowpack-react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/weiyuxuan/snowpack-react-boilerplate#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "husky": "^4.3.8",
+    "snowpack": "^3.0.11"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
