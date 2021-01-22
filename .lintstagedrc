@@ -1,0 +1,5 @@
+{
+  "*.{js,jsx}": "eslint --fix",
+  "src/**/*.scss": "stylelint --syntax=scss --fix",
+  "src/**/*.{jsx,js,scss}": "cspell"
+}
