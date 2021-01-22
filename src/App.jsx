@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logo from './react.svg';
-import './App.css';
+import './App.scss';
 
 function App() {
   // Create the count state.
