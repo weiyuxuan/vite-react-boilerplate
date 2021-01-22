@@ -19,6 +19,7 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@snowpack/plugin-react-refresh": "^2.4.0",
     "husky": "^4.3.8",
     "snowpack": "^3.0.11"
   },
