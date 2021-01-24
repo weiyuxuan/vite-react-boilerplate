@@ -8,6 +8,8 @@
     "webpackbar",
     "entrypoint",
     "browserslist",
-    "snowpack"
+    "snowpack",
+    "Snowpack's",
+    "esbuild"
   ]
 }
