@@ -1,15 +1,11 @@
 {
   "compilerOptions": {
-    // Base path
-    "baseUrl": ".",
-    // Target Path
-    "outDir": "dist",
     // Target ES version
-    "target": "ESNext",
+    "target": "ES5",
     // Default set of type definitions for built-in JS APIs
-    "lib": ["DOM", "ES5", "ES6", "ES7", "ES2017", "ES2018", "ES2019", "ES2020"],
-    // Target Module type
-    "module": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    // Target Module type (It's CommonJS if target is ES5)
+    "module": "commonjs",
     // Specify the module resolution strategy
     "moduleResolution": "node",
     // Controls how JSX constructs are emitted in JavaScript files
@@ -42,7 +38,6 @@
     }
   },
   "include": [
-    "src/*",
     "src/**/*"
   ],
   "exclude": [
