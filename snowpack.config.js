@@ -43,7 +43,9 @@ module.exports = {
 
   // Using Snowpack's built-in bundling support.
   optimize: {
-    bundle: true,
+    // Built-in bundle has css module compile issues.
+    // See https://github.com/withastro/snowpack/issues/3243
+    bundle: false,
     minify: true,
     target: 'es2020',
     sourcemap: false,
