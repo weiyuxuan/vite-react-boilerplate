@@ -1,4 +1,5 @@
-/** @type {import("snowpack").SnowpackUserConfig } */
+/** @type { import("snowpack").SnowpackUserConfig } */
+
 module.exports = {
   // Specify the root of a project using Snowpack.
   root: './',
@@ -7,16 +8,22 @@ module.exports = {
   // The key is the name of the directory and the value is where you’d like them in the final build.
   mount: {
     public: { url: '/', static: true, resolve: false },
-    src: { url: '/assets' },
+    src: { url: '/bundle' },
   },
 
   // Configure import aliases for directories and packages.
   alias: {
-    components: './src/components',
+    '@components': './src/components',
+    '@constants': './src/constants',
+    '@hooks': './src/hooks',
   },
 
   // Enable Snowpack plugins and their options.
-  plugins: ['@snowpack/plugin-react-refresh', '@snowpack/plugin-sass'],
+  plugins: [
+    '@snowpack/plugin-react-refresh',
+    '@snowpack/plugin-typescript',
+    '@snowpack/plugin-sass',
+  ],
 
   // Configure the Snowpack dev server.
   devOptions: {
@@ -29,7 +36,6 @@ module.exports = {
   buildOptions: {
     out: 'dist',
     baseUrl: '/',
-    sourcemap: false,
   },
 
   // Enable an SPA Fallback in development
@@ -40,6 +46,7 @@ module.exports = {
     bundle: true,
     minify: true,
     target: 'es2020',
+    sourcemap: false,
   },
 
   // Configure how npm packages are installed and used.
