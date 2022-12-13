@@ -1,4 +1,4 @@
-# snowpack-react-boilerplate
+# Snowpack React Boilerplate
 
 A simple and easy boilerplate for react developer, based on snowpack 3.
 
@@ -26,7 +26,7 @@ Based on JavaScript's native module system (known as ESM) to avoid unnecessary b
 
 ## Quick Start
 
-1. Make sure that you have Node.js 12.22.10(LTS) or above installed.
+1. Make sure that you have Node.js v14.18.3 or above installed.
 2. Clone this repo using `git clone --depth=1 https://github.com/weiyuxuan/snowpack-react-boilerplate.git <YOUR_PROJECT_NAME>`
 3. Move to the appropriate directory: `cd <YOUR_PROJECT_NAME>`.
 4. Run `npm i` to install dependencies.

@@ -21,8 +21,10 @@
   "plugins": ["@typescript-eslint"],
   "rules": {
     "arrow-parens": ["error", "always"],
-    "max-len": ["error", { "code": 80, "ignoreStrings": true, "ignoreComments": true }],
+    "comma-dangle": ["error", "always-multiline"],
     "jsx-quotes": ["error", "prefer-double"],
+    "operator-linebreak": ["error", "before"],
+    "max-len": ["error", { "code": 80, "ignoreStrings": true, "ignoreComments": true }],
     "no-use-before-define": "off",
     "space-before-function-paren": ["error", "never"],
     "@typescript-eslint/no-use-before-define": ["error"]

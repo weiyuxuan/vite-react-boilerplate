@@ -2,6 +2,5 @@
 
 last 2 version
 > 1%
-not ie 11
-not UCAndroid >0
-not OperaMini all
+not ie <= 8
+not dead
