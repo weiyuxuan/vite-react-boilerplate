@@ -1,36 +1,20 @@
 {
   "compilerOptions": {
-    // Target ES version
-    "target": "ES5",
-    // Default set of type definitions for built-in JS APIs
-    "lib": ["DOM", "ESNext"],
-    // Target Module type (It's CommonJS if target is ES5)
-    "module": "commonjs",
-    // Specify the module resolution strategy
-    "moduleResolution": "node",
-    // Controls how JSX constructs are emitted in JavaScript files
-    "jsx": "react",
-    // Generate .d.ts files for every TypeScript or JavaScript file inside your project
-    "declaration": true,
-    // Not allow `any` type
-    "noImplicitAny": false,
-    // Removes comments
-    "removeComments": true,
-    // Not erase `const` / `enum` declarations in generated code
-    "preserveConstEnums": true,
-    // Generate source maps
-    "sourceMap": false,
-    // Check `null` / `undefined` in conditionals
-    "strictNullChecks": true,
-    // Fix ES Module transpiled problems
-    "esModuleInterop": true,
-    // Do not emit compiler output files if any errors were reported
-    "noEmitOnError": true,
-    // Enable support for a more accurate implementation of how modern JavaScript iterates
-    "downlevelIteration": true,
-    // Skip type checking of declaration files
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
     "skipLibCheck": true,
-    // Path alias
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
     "paths": {
       "@components/*": ["./src/components/*"],
       "@constants/*": ["./src/constants/*"],
@@ -42,5 +26,8 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "references": [{
+    "path": "./tsconfig.node.json"
+  }]
 }

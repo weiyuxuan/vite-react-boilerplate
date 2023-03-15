@@ -5,10 +5,8 @@
     "stylelint-config-rational-order"
   ],
   "rules": {
-    "indentation": 2,
     "no-descending-specificity": null,
     "selector-class-pattern": null,
-    "color-hex-case": "lower",
     "color-hex-length": "short"
   },
   "ignoreFiles": ["dist/**", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]

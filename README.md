@@ -1,6 +1,6 @@
-# Snowpack React Boilerplate
+# Vite React Boilerplate
 
-A simple and easy boilerplate for react developer, based on snowpack 3.
+A simple and easy boilerplate for react developer, based on vite 4.
 
 ## Features
 
@@ -27,7 +27,7 @@ Based on JavaScript's native module system (known as ESM) to avoid unnecessary b
 ## Quick Start
 
 1. Make sure that you have Node.js v14.18.3 or above installed.
-2. Clone this repo using `git clone --depth=1 https://github.com/weiyuxuan/snowpack-react-boilerplate.git <YOUR_PROJECT_NAME>`
+2. Clone this repo using `git clone --depth=1 https://github.com/weiyuxuan/vite-react-boilerplate.git <YOUR_PROJECT_NAME>`
 3. Move to the appropriate directory: `cd <YOUR_PROJECT_NAME>`.
 4. Run `npm ci` to install dependencies.
 5. Run `npm run dev` to see the example app at <http://localhost:3000>.
@@ -35,12 +35,10 @@ Based on JavaScript's native module system (known as ESM) to avoid unnecessary b
 
 ## Dependencies
 
-### snowpack
+### vite
 
-- [`snowpack`](https://github.com/snowpackjs/snowpack) - Lightning-fast frontend build tool.
-- [`@snowpack/plugin-sass`](https://github.com/snowpackjs/snowpack/tree/main/plugins/plugin-sass) - Sass support to any Snowpack project.
-- [`@snowpack/plugin-typescript`](https://github.com/withastro/snowpack/tree/main/plugins/plugin-typescript) - This plugin adds TypeScript type checking to any Snowpack project.
-- [`@snowpack/plugin-react-refresh`](https://github.com/snowpackjs/snowpack/tree/main/plugins/plugin-react-refresh) - Transforms JavaScript files containing React components automatically to enable React Fast Refresh via Snowpack's HMR API.
+- [`vite`](https://github.com/vitejs/vite) - Next Generation Frontend Tooling.
+- [`@vitejs/plugin-react-swc`](https://github.com/vitejs/vite-plugin-react-swc) - Speed up your Vite dev server with SWC.
 
 ### ESLint
 
